@@ -1,5 +1,8 @@
-.Home {
+.main-container {
   text-align: center;
+  max-width: 840px;
+  margin: auto;
+  margin-top: 2em;
 }
 
 .Home-logo {

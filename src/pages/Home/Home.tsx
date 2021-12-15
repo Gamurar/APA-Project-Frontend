@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <>
-      <MainContainer>
+      <MainContainer className="main-container">
         <SearchInput setSearchResult={setSearchResult}></SearchInput>
         <SearchResult
           stringList={searchResult}
