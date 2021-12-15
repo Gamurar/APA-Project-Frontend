@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+React.js + Node.js + MongoDB project with **Aho–Corasick algorithm** implementation on backend.
+This is the React.js frontend part.
 
 ## Available Scripts
 
