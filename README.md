@@ -1,3 +1,7 @@
+<img src="https://raw.githubusercontent.com/Gamurar/docs/master/apa.gif">
+
+## Description
+
 React.js + Node.js + MongoDB project with **Aho–Corasick algorithm** implementation on backend.
 This is the React.js frontend part.
 
