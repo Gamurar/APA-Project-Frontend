@@ -1,0 +1,29 @@
+version: '3.3'
+
+services:
+  https-portal:
+    image: steveltn/https-portal:1
+    container_name: https-proxy
+    restart: always
+    ports:
+      - '80:80'
+      - '443:443'
+    links:
+      - frontend
+    environment:
+      STAGE: 'production'
+      DOMAINS: "${DOMAIN} -> http://frontend:8000"
+      # If you find your certificates are not chained correctly
+      FORCE_RENEW: "${FORCE_RENEW}"
+    volumes: 
+      - https-portal-data:/var/lib/https-portal
+  frontend:
+    build: .
+    container_name: frontend
+    restart: always
+    ports:
+      - "8000:8000"
+    expose:
+      - '8000'
+volumes:
+  https-portal-data: {}
